@@ -2,7 +2,9 @@
 
 > [!NOTE]
 > Create `next-env.d.ts` and `.env.local` from example files:
+>
 > `next-env.d.ts`: Run the following `cp next-env.d.example.ts next-env.d.ts && rm next-env.d.example.ts`
+>
 > `.env.local`: Run the following `cp env.local.example .env.local && rm env.local.example`
 
 ## Getting Started
