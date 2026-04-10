@@ -1,0 +1,85 @@
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+
+  background: var(--background);
+  color: var(--text-color);
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.logo {
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+  cursor: pointer;
+  border-radius: 75px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.6));
+}
+
+.next:hover {
+  filter: drop-shadow(0 0 8px rgba(0, 255, 163, 0.6));
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--background);
+}
+
+.card button {
+  padding: 0.6rem 1rem;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  background: var(--accent);
+  color: var(--accent-contrast);
+
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.card button:hover {
+  background: var(--background);
+  color: var(--text-color);
+
+  transform: translateY(-1px);
+
+  border: 1px solid var(--accent);
+}
+
+.card button:active {
+  transform: translateY(0);
+}
+
+.card button:disabled {
+  background: var(--gray);
+  color: var(--light);
+
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.page p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
