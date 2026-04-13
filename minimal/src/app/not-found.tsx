@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import React from 'react';
 
-import styles from '@assets/css/not-found-page.module.css';
+import styles from '@app/not-found.module.css';
 
-export default function NotFound() {
+export default function NotFound(): React.JSX.Element {
   return (
     <main className={styles.page}>
       <div className={styles.title}>
@@ -11,7 +12,7 @@ export default function NotFound() {
       <div className={styles.message}>
         <p>Unfortunately, the requested resource could not be found.</p>
       </div>
-      <div className={styles.buttonWrapper}>
+      <div className={styles['button-wrapper']}>
         <Link className={styles.link} href="/">
           Return Home
         </Link>

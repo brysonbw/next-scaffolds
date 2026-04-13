@@ -1,28 +1,28 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import styles from '@app/page.module.css';
 
-export default function Home() {
+export default function Home(): React.JSX.Element {
   const [count, setCount] = useState(0);
 
-  function increment() {
+  function increment(): void {
     setCount((prev) => prev + 1);
   }
 
-  function decrement() {
+  function decrement(): void {
     setCount((prev) => prev - 1);
   }
 
-  function reset() {
+  function reset(): void {
     setCount(0);
   }
 
   return (
     <main className={styles.page}>
-      <div className={styles.logoWrapper}>
+      <div className={styles['logo-wrapper']}>
         <Link href="https://nextjs.org/" target="_blank">
           <Image
             width={150}
@@ -30,6 +30,7 @@ export default function Home() {
             src="/images/nextjs.jpg"
             className={styles.logo}
             alt="Next logo"
+            priority
           />
         </Link>
       </div>
