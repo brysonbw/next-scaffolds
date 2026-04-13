@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 
 import '@app/globals.css';
-import AppFooter from '@components/app-footer';
-import AppHeader from '@components/app-header';
+
+import AppFooter from '@components/app/app-footer';
+import AppHeader from '@components/app/app-header';
 
 export const metadata: Metadata = {
   title: 'Next App | Home',
@@ -13,7 +14,9 @@ interface Props {
   children: React.ReactNode;
 }
 
-export default function RootLayout({ children }: Readonly<Props>) {
+export default function RootLayout({
+  children,
+}: Readonly<Props>): React.JSX.Element {
   return (
     <html lang="en">
       <body>

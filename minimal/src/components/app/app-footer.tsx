@@ -1,18 +1,17 @@
-'use client';
 import Link from 'next/link';
 
-import styles from '@assets/css/app-footer.module.css';
+import styles from '@components/app/app-footer.module.css';
 
 function currentYear(): string {
   const date = new Date();
   return date.getFullYear().toString();
 }
 
-export default function AppFooter() {
+export default function AppFooter(): React.JSX.Element {
   return (
     <footer>
-      <div className={styles.footerContainer}>
-        <div className={styles.footerText}>
+      <div className={styles['footer-content-wrapper']}>
+        <div className={styles['footer-content']}>
           <p>© {currentYear()}</p>•
           <p>
             <Link className={styles.link} href="/">

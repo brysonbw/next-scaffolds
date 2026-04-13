@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.navLogo {
+.nav-logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,12 +22,12 @@
   border-radius: 30px;
 }
 
-.appTitle {
+.app-title {
   font-size: 1.125rem;
   font-weight: 500;
 }
 
-.navLinks {
+.nav-links {
   display: flex;
   gap: 1.5rem;
 }
@@ -46,7 +46,7 @@
     height: 1.65rem;
   }
 
-  .appTitle {
+  .app-title {
     font-size: 0.95rem;
   }
 
